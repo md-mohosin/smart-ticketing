@@ -3,7 +3,7 @@
     margin: 0;
 }
 
-body{
+body {
     background-color: white;
 }
 
@@ -19,6 +19,16 @@ body{
 
 .header-section {
     margin-top: 15px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h3 {
+    font-size: 35px;
 }
 
 .navigation-link {
@@ -46,30 +56,104 @@ body{
     background-color: #E8FAE5;
     color: #31f10a;
 }
-.nav-btn:hover{
+
+.nav-btn:hover {
     background-color: transparent;
 }
 
-.menu{
+.menu {
     display: none;
+}
+
+.banner-section {
+    margin-top: 50px;
+    height: 650px;
+    background-image: url('./images/banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    color: white;
+}
+
+.banner-content span {
+    color: #1DD100;
+}
+
+.banner-content {
+    width: 44%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.banner-btn {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+    background-color: #1DD100;
+    padding: 20px 30px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.banner-heading {
+    font-size: 64px;
+    padding-bottom: 20px;
 }
 
 
 
 
 
+@media (max-width:1500px) {
+    .content{
+        width: 90%;
+    }
+}
+
+
+
+
+@media (max-width:1200px) {
+    .content{
+        width: 90%;
+    }
+    .banner-section{
+        height: 540px;
+    }
+    .banner-content{
+        width: 90%;
+    }
+}
 
 
 
 
 @media (max-width:800px) {
-     .content {
+    .content {
         width: 90%;
     }
 
-
-    .navigation-link{
+    .navigation-link {
         gap: 40px;
+    }
+    .banner-section{
+        height: 400px;
+    }
+    .banner-content{
+        width: 100%;
+        padding-inline: 10px;
+    }
+
+    .banner-btn{
+        padding: 13px 19px;
+        font-size: 17px;
+        border-radius: 6px;
     }
 }
 
@@ -81,14 +165,34 @@ body{
 /* MOBILE RESPONSIVE */
 @media (max-width:600px) {
     .content {
-        width: 90%;
+        width: 95%;
     }
 
-    .navigation-link,.nav-btn {
+    .navigation-link,
+    .nav-btn {
         display: none;
     }
 
-    .menu{
+    .menu {
         display: block;
+    }
+
+    .banner-section {
+        margin-top: 10px;
+        height: 300px;
+    }
+
+    .banner-content {
+        width: 100%;
+        padding-inline: 5px;
+    }
+
+    .banner-heading {
+        font-size: 36px;
+    }
+    .banner-btn{
+        padding: 10px 16px;
+        font-size: 17px;
+        border-radius: 6px;
     }
 }
