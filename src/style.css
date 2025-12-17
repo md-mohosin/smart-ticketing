@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     padding: 0%;
     margin: 0;
@@ -25,6 +27,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-family: Raleway;
 }
 
 .navbar h3 {
@@ -36,6 +39,13 @@ body {
     display: flex;
     gap: 60px;
     font-size: 18px;
+}
+
+.navigation-link a{
+    text-decoration: none;color: black;font-weight: 600;
+}
+.navigation-link a:hover{
+    color: #31f10a;
 }
 
 .nav-right {
@@ -96,14 +106,31 @@ body {
     font-weight: 500;
     color: black;
     background-color: #1DD100;
+    border: 1px solid #1DD100;
     padding: 20px 30px;
     border-radius: 10px;
     margin-top: 20px;
+}
+.banner-btn:hover{
+    background-color: transparent;
+    color: #1DD100;
+    border: 1px solid #1DD100;
 }
 
 .banner-heading {
     font-size: 64px;
     padding-bottom: 20px;
+}
+
+.main{
+    margin-top: 120px;
+    background-color: #F7F8F8;
+    border-top: 2px solid #A1E896;
+    border-radius: 50px;
+}
+
+.bus-details{
+    background-color: white;
 }
 
 
