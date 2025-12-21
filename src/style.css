@@ -21,13 +21,13 @@ body {
 
 .header-section {
     margin-top: 15px;
+    font-family: Raleway;
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family: Raleway;
 }
 
 .navbar h3 {
@@ -41,10 +41,13 @@ body {
     font-size: 18px;
 }
 
-.navigation-link a{
-    text-decoration: none;color: black;font-weight: 600;
+.navigation-link a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
 }
-.navigation-link a:hover{
+
+.navigation-link a:hover {
     color: #31f10a;
 }
 
@@ -102,16 +105,17 @@ body {
 .banner-btn {
     display: inline-block;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
     color: black;
     background-color: #1DD100;
     border: 1px solid #1DD100;
-    padding: 20px 30px;
-    border-radius: 10px;
+    padding: 13px 30px;
+    border-radius: 9px;
     margin-top: 20px;
 }
-.banner-btn:hover{
+
+.banner-btn:hover {
     background-color: transparent;
     color: #1DD100;
     border: 1px solid #1DD100;
@@ -122,23 +126,180 @@ body {
     padding-bottom: 20px;
 }
 
-.main{
+.main {
     margin-top: 120px;
     background-color: #F7F8F8;
     border-top: 2px solid #A1E896;
     border-radius: 50px;
 }
 
-.bus-details{
+.bus-details-cupon {
     background-color: white;
+    border-radius: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 416px;
+    font-family: Raleway;
+    padding: 30px;
+    margin-top: 40px;
+}
+
+.seat-content {
+    text-align: center;
+    width: 40%;
+    margin: 0 auto;
+
+}
+
+.seat-content-title {
+    font-size: 40px;
+    padding-bottom: 14px;
+}
+
+.bus-details-cupon-card {
+    width: 70%;
+}
+
+.seat-status {
+    display: flex;
+    justify-content: space-between;
+}
+
+.seat-count {
+    background-color: #dbefd7;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+.seats {
+    font-size: 19px;
+    color: #1DD100;
+    font-weight: 500;
+}
+
+.set-nums {
+    padding-right: 6px;
+}
+
+.bus-name {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.bus-name-title {
+    font-size: 32px;
+}
+
+.bus-direction {
+    background-color: #F7F8F8;
+    padding: 30px;
+    border-radius: 14px;
+    margin-top: 25px;
+}
+
+.bus-route {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px dashed rgb(3, 7, 18, 0.2);
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+}
+
+.bus-direction-time {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bus-time-title {
+    background-color: #95979C;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 8px;
+}
+
+.regular-price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    text-align: center;
+}
+.price-heading{
+    font-size: 28px;
+    padding: 8px 0;
+}
+
+.all-seats-container{
+    background-color: white;
+    font-family: Raleway;
+    margin-top: 40px;
+    padding: 30px;
+    border-radius: 24px;
+}
+
+.select-content{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    border-bottom: 1px dashed rgb(3, 7, 18, 0.2);
+    padding-bottom: 10px;
+}
+
+.all-seats{
+    width: 70%;
+}
+
+.select-title{
+    font-size: 18px;
+    border-bottom: 1px dashed rgb(3, 7, 18, 0.2);
+    padding-bottom: 10px;
+}
+
+.selected,.available{
+    display: flex;
+    align-items: center;gap: 8px;
+}
+
+.side-number{
+    display: grid;
+    gap: 32px;
+}
+.side{
+    padding: 20px 10px;
+}
+
+.seat{
+    background-color: #eef1f3;
+    width: 120px;
+    text-align: center;
+    padding: 20px 10px;
+    border-radius: 8px;transition: 0.8s;
+}
+.seat:hover{
+    background-color: #111112;
+color: white;
+}
+
+.left-side-seat,.right-side-seat{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 32px;
 }
 
 
 
 
 
+
+
+
 @media (max-width:1500px) {
-    .content{
+    .content {
         width: 90%;
     }
 }
@@ -147,13 +308,15 @@ body {
 
 
 @media (max-width:1200px) {
-    .content{
+    .content {
         width: 90%;
     }
-    .banner-section{
+
+    .banner-section {
         height: 540px;
     }
-    .banner-content{
+
+    .banner-content {
         width: 90%;
     }
 }
@@ -169,15 +332,17 @@ body {
     .navigation-link {
         gap: 40px;
     }
-    .banner-section{
+
+    .banner-section {
         height: 400px;
     }
-    .banner-content{
+
+    .banner-content {
         width: 100%;
         padding-inline: 10px;
     }
 
-    .banner-btn{
+    .banner-btn {
         padding: 13px 19px;
         font-size: 17px;
         border-radius: 6px;
@@ -217,9 +382,60 @@ body {
     .banner-heading {
         font-size: 36px;
     }
-    .banner-btn{
+
+    .banner-btn {
         padding: 10px 16px;
         font-size: 17px;
         border-radius: 6px;
+    }
+
+    .bus-details-cupon {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .seat-status {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .seat-content-title{
+        font-size: 28px;
+    }
+
+    .seat-content{
+        width: 98%;padding: 15px 0;
+    }
+
+    .bus-details-cupon-card {
+        width: 100%;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    .bus-direction-time {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .bus-direction{
+        padding: 20px;
+    }
+
+    .bus-details-cupon{
+        padding: 20px;
+    }
+
+    .bus-name-title{
+        font-size: 24px;
+    }
+
+    .bus-details-cupon {
+        height: auto;
+    }
+
+    .regular-price {
+        width: 100%;
+        height: auto;
     }
 }
